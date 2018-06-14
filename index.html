@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VUE - API calls | US postal code</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="zipcode-app" class="main">
+        <div class="content">
+            <div class="form">
+                <div class="form-align">
+                    <div class="header">
+                        <h1>U.S. - Home Moving Service</h1>
+                    </div>
+
+                    <div class="inputs">
+                        <div class="input-start">
+                            <input type="number" placeholder="Enter Starting Zip" v-model="startZip">
+                            <span class="location">{{startLocation}}</span>
+                        </div>
+
+                        <div class="input-end">
+                            <input type="number" placeholder="Enter End Zip" v-model="endZip">
+                            <span class="location">{{endLocation}}</span>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
